@@ -42,14 +42,23 @@ class ProductPage extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.fetch(); // Mount 시에 fetch 함수 실행
+  }
+
   render() {
     return (
       <div className="ProductPage">
         <Page header={<Title>메뉴목록</Title>} footer={<Navbar />}>
           <ul>
-            <li>
+            {/* <li>
               <ProductItem product={sample} />
-            </li>
+            </li> */}
+            {this.state.productList.map((product) => (
+              <li key={product.id}>
+                <ProductItem product={product} />
+              </li>
+            ))}
           </ul>
         </Page>
       </div>
