@@ -13,21 +13,6 @@ const sample = {
 function App() {
   return (
     <div className="ProductPage">
-      {/* <div className="Page">
-        <header>
-          <Title>메뉴목록</Title>
-        </header>
-        <main>
-          <ul>
-            <li>
-              <ProductItem product={sample} />
-            </li>
-          </ul>
-        </main>
-        <footer>
-          <Navbar />
-        </footer>
-      </div> */}
       <Page header={<Title>메뉴목록</Title>} footer={<Navbar />}>
         <ul>
           <li>
