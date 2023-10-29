@@ -1,6 +1,13 @@
 // import Button from "./components/Button";
 import ProductItem from "./components/ProductItem";
 
+const sample = {
+  id: "CACDA421",
+  name: "해물 계란 라면",
+  price: 6000,
+  thumbnail: "./images/menu-해물계란라면.jpg",
+};
+
 function App() {
   return (
     <div className="ProductPage">
@@ -29,7 +36,7 @@ function App() {
                   />
                 </div>
               </div> */}
-              <ProductItem />
+              <ProductItem product={sample} />
             </li>
           </ul>
         </main>

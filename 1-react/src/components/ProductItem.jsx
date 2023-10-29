@@ -1,11 +1,13 @@
 import Button from "./Button";
 
-const ProductItem = () => {
+const ProductItem = ({ product }) => {
+  const { name, price, thumbnail } = product;
+
   return (
     <div className="ProductItem">
       <div className="description">
-        <h2>고소한 바질 파스타</h2>
-        <div>6,000원</div>
+        <h2>{name}</h2>
+        <div>{price.toLocaleString()}원</div>
         {/* <button className="Button brand">주문하기</button> */}
         <Button
           styleType={"brand"}
@@ -15,10 +17,7 @@ const ProductItem = () => {
         </Button>
       </div>
       <div className="thumbnail">
-        <img
-          src="./images/menu-고소한바질파스타.jpg"
-          alt="고소한바질파스타 6,000원"
-        />
+        <img src={thumbnail} alt={`${name} ${price.toLocaleString()}원`} />
       </div>
     </div>
   );
