@@ -12,18 +12,6 @@ const sample = {
   thumbnail: "./images/menu-해물계란라면.jpg",
 };
 
-// const ProductPage = () => (
-//   <div className="ProductPage">
-//     <Page header={<Title>메뉴목록</Title>} footer={<Navbar />}>
-//       <ul>
-//         <li>
-//           <ProductItem product={sample} />
-//         </li>
-//       </ul>
-//     </Page>
-//   </div>
-// );
-
 class ProductPage extends React.Component {
   constructor(props) {
     super(props); // React.Component의 생성자 호출
@@ -51,9 +39,6 @@ class ProductPage extends React.Component {
       <div className="ProductPage">
         <Page header={<Title>메뉴목록</Title>} footer={<Navbar />}>
           <ul>
-            {/* <li>
-              <ProductItem product={sample} />
-            </li> */}
             {this.state.productList.map((product) => (
               <li key={product.id}>
                 <ProductItem product={product} />
