@@ -12,9 +12,8 @@ const sample = {
 function App() {
   return (
     <div className="ProductPage">
-      <div className="Page">
+      {/* <div className="Page">
         <header>
-          {/* <h1>메뉴 목록</h1> */}
           <Title>메뉴목록</Title>
         </header>
         <main>
@@ -25,17 +24,10 @@ function App() {
           </ul>
         </main>
         <footer>
-          {/* <nav className="Navbar">
-            <a className="active" href="#">
-            메뉴목록
-            </a>
-            <a className="" href="#">
-            주문내역
-            </a>
-          </nav> */}
           <Navbar />
         </footer>
-      </div>
+      </div> */}
+      <Page />
     </div>
   );
 }
