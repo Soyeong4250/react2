@@ -1,5 +1,6 @@
 import Title from "./components/Title";
 import ProductItem from "./components/ProductItem";
+import Navbar from "./components/Navbar";
 
 const sample = {
   id: "CACDA421",
@@ -24,14 +25,15 @@ function App() {
           </ul>
         </main>
         <footer>
-          <nav className="Navbar">
+          {/* <nav className="Navbar">
             <a className="active" href="#">
-              메뉴목록
+            메뉴목록
             </a>
             <a className="" href="#">
-              주문내역
+            주문내역
             </a>
-          </nav>
+          </nav> */}
+          <Navbar />
         </footer>
       </div>
     </div>
