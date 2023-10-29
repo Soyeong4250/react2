@@ -1,4 +1,5 @@
-import Button from "./components/Button";
+// import Button from "./components/Button";
+import ProductItem from "./components/ProductItem";
 
 function App() {
   return (
@@ -10,11 +11,10 @@ function App() {
         <main>
           <ul>
             <li>
-              <div className="ProductItem">
+              {/* <div className="ProductItem">
                 <div className="description">
                   <h2>고소한 바질 파스타</h2>
                   <div>6,000원</div>
-                  {/* <button className="Button brand">주문하기</button> */}
                   <Button
                     styleType={"brand"}
                     onClick={() => console.log("주문하기 클릭")}
@@ -28,7 +28,8 @@ function App() {
                     alt="고소한바질파스타 6,000원"
                   />
                 </div>
-              </div>
+              </div> */}
+              <ProductItem />
             </li>
           </ul>
         </main>
