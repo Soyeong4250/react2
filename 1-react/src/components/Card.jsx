@@ -1,8 +1,13 @@
-const Card = () => (
+const Card = ({header, data = [], footer}) => (
   <div className="Card">
-    <header>헤더</header>
-    <main>본문</main>
-    <footer>푸터</footer>
+    <header>{header}</header>
+    <main>{data.map(({term, description}) => (
+      <dl key={term}>
+        <dt>{term}</dt>
+        <dd>{description}</dd>
+      </dl>
+    ))}</main>
+    <footer>{footer}</footer>
   </div>
 );
 
