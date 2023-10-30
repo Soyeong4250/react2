@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Title from "../../components/Title";
 import Card from "../../components/Card";
 import OrderDeliveryCard from "./OrderDeliveryCard";
+import OrderPaymentCard from "./OrderPaymentCard";
 
 const sample = {
   id: "CACDA420",
@@ -28,6 +29,7 @@ const OrderPage = () => (
   <div className="OrderPage">
     <Page header={<Title>주문내역</Title>} footer={<Navbar />}>
       {/* <Card /> */}
+      <OrderPaymentCard order={sample} />
       <OrderDeliveryCard order={sample} />
     </ Page>
   </div>
