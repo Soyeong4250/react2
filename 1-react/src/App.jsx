@@ -1,11 +1,11 @@
-import ProductPage from "./pages/ProductPage";
+// import ProductPage from "./pages/ProductPage";
 // import OrderPage from "./pages/OrderPage";
-// import CartPage from "./pages/CartPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
-  return <ProductPage />;
+  // return <ProductPage />;
   // return <OrderPage />
-  // return <CartPage />
+  return <CartPage />
 }
 
 export default App;

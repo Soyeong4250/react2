@@ -2,6 +2,7 @@ import Button from "../../components/Button";
 import Page from "../../components/Page";
 import Title from "../../components/Title";
 import ProductItem from './../../components/ProductItem';
+import FormControl from "../../components/FormControl";
 
 const sample =  {
   id: "CACDA421",
@@ -17,6 +18,7 @@ const CartPage = () => (
       footer={<Button styleType={'brand-solid'} block>결제하기</Button>}>
         <ProductItem product={sample}/>
       </Page>
+      <FormControl />
   </div>
 );
 
