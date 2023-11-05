@@ -1,4 +1,5 @@
-import Button from "../../components/Button";
+// import Button from "../../components/Button";
+import PaymentButton from "../CartPage/PaymentButton"
 import Page from "../../components/Page";
 import Title from "../../components/Title";
 import ProductItem from './../../components/ProductItem';
@@ -16,7 +17,7 @@ const CartPage = () => (
   <div className="CartPage">
       <Page 
       header={<Title backUrl={"/"}>장바구니</Title>} 
-      footer={<Button styleType={'brand-solid'} block form='order-form'>결제하기</Button>}>
+      footer={<PaymentButton />}>
         <ProductItem product={sample}/>
       </Page>
       {/* <FormControl label="이름" htmlFor={'name'} required>
