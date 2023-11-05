@@ -11,8 +11,15 @@ function App() {
 // export default App;
 
 import React from "react";
+class Foo extends React.Component {
+  render() {
+    return <>Foo</>
+  }
+}
+
 class MyComponent extends React.Component {  // ref 객체는 지속적으로 관리할 수 있도록 저장해야 하므로 class로 생성
   divRef = React.createRef();  // ref 객체 생성
+  fooRef = React.createRef();
 
   constructor(props) {
     super(props)
@@ -21,11 +28,15 @@ class MyComponent extends React.Component {  // ref 객체는 지속적으로 �
 
   render() {
     console.log('render', this.divRef);
-    return <div ref={this.divRef}>div</div>
+    return <>
+      <div ref={this.divRef}>div</div>
+      <Foo ref={this.fooRef }/>
+    </>
   }
 
   componentDidMount() {
-    console.log('componentDidMount', this.divRef);
+    console.log('componentDidMount divRef', this.divRef);
+    console.log('componentDidMount fooRef', this.fooRef);
     const divElement = this.divRef.current;
     divElement.style.backgroundColor = 'red';
     divElement.style.height = '100px';
