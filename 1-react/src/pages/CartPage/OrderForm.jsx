@@ -30,7 +30,7 @@ class OrderForm extends React.Component {  // 계속 유지되는 값을 만들�
         const messageToShop = this.getInputValueByName('messageToShop')
         const messageToRider = this.getInputValueByName('messageToRider')
         
-        console.log("submit", this.formRef.current, {
+        this.props.onSubmit({  // 콜백함수 (호출한 쪽으로 데이터 전달)
             deliveryAddress,
             deliveryContact,
             paymentMethod,
