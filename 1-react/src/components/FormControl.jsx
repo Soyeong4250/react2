@@ -1,10 +1,10 @@
-const FormControl = () => {
+const FormControl = ({ label, htmlFor, required, children }) => {
   return (
     <div className="FormControl">
-      <label htmlFor="name">
-        이름<span className="required">*</span>
+      <label htmlFor={htmlFor}>
+        {label}{required && <span className="required">*</span>}
       </label>
-      <input id="name" />
+      {children}
     </div>
   )
 }

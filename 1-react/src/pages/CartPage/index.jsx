@@ -18,7 +18,9 @@ const CartPage = () => (
       footer={<Button styleType={'brand-solid'} block>결제하기</Button>}>
         <ProductItem product={sample}/>
       </Page>
-      <FormControl />
+      <FormControl label="이름" htmlFor={'name'} required>
+        <input type="text" id="name" />
+      </FormControl>
   </div>
 );
 
