@@ -4,7 +4,7 @@ const OrderForm = () => {
     return (
         <form className='OrderForm'>
             <FormControl label="주소" htmlFor={'deliveryAddress'} required>
-                <input type="text" name='deliveryAddress' id='deliveryAddress' placeHolder='배달받을 주소를 입력하세요.' required autoForcus/>
+                <input type="text" name='deliveryAddress' id='deliveryAddress' placeHolder='배달받을 주소를 입력하세요.' required autoFocus/>
             </FormControl>
             <FormControl label="연락처" htmlFor={'deliveryContact'} required>
                 <input type="text" name='deliveryContact' id='deliveryContact' placeHolder='연락처를 입력하세요.' required pattern='^\d{2,3}-\d{3,4}-\d{4}$'/>
