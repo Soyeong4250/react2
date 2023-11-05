@@ -16,7 +16,7 @@ const CartPage = () => (
   <div className="CartPage">
       <Page 
       header={<Title backUrl={"/"}>장바구니</Title>} 
-      footer={<Button styleType={'brand-solid'} block>결제하기</Button>}>
+      footer={<Button styleType={'brand-solid'} block form='order-form'>결제하기</Button>}>
         <ProductItem product={sample}/>
       </Page>
       {/* <FormControl label="이름" htmlFor={'name'} required>
