@@ -52,7 +52,7 @@ const PlusButton = () => {
   return (
     <countContext.Consumer>
       {(value) => (
-        <button onClick={()=>value.setCount(value.count + 1)}>+ 카운드 올리기</button>
+        <button onClick={()=>value.setCount(value.count + 1)}>+ 카운트 올리기</button>
       )}
     </countContext.Consumer>
   )
