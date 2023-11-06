@@ -1,11 +1,15 @@
-// import ProductPage from "./pages/ProductPage";
-// import OrderPage from "./pages/OrderPage";
 import CartPage from "./pages/CartPage";
+import OrderPage from "./pages/OrderPage";
+import ProductPage from "./pages/ProductPage";
 
-function App() {
-  // return <ProductPage />;
-  // return <OrderPage />
-  return <CartPage />
+export default function App() {
+  const { pathname } = window.location
+
+  return (
+    <>
+      {pathname === '/cart' && <CartPage />}
+      {pathname === '/order' && <OrderPage />}
+      {!["/cart", "/order"].includes(pathname) && <ProductPage />}
+    </>
+  )
 }
-
-export default App;
